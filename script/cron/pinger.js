@@ -16,6 +16,6 @@ const task = async () => {
   }
 };
 
-cron.schedule("* * * * * *", task);
+cron.schedule("* * * * *", task);
 
 console.log("Cron job started");
