@@ -6,7 +6,8 @@ const url = process.env.URL
 
 const task = async () => {
   try {
-    await axios.get(url);
+    const response = await axios.get(url);
+    console.log("Status: ", response.status)
     console.log(`Route ${url} hit at`, new Date().toLocaleString());
   } catch (err) {
     console.error("Error hitting route:", err.message);
